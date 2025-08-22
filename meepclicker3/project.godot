@@ -11,8 +11,18 @@ config_version=5
 [application]
 
 config/name="MeepClicker3"
+run/main_scene="uid://dkdgsxhch6q4h"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Globals="*res://Main/globals.gd"
+
+[display]
+
+window/size/viewport_width=800
+window/size/viewport_height=600
 
 [dotnet]
 
@@ -20,5 +30,6 @@ project/assembly_name="MeepClicker3"
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
