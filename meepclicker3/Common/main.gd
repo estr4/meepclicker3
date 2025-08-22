@@ -4,7 +4,7 @@ extends Node2D
 @onready var goldlabel = $"Gold-Label"
 
 func _ready() -> void:
-	animated_sprite_2d.play("beetle")
+	animated_sprite_2d.play()
 
 func _process(delta: float) -> void:
 	animated_sprite_2d.rotate(delta * 1.5)

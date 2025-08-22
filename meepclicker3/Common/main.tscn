@@ -1,18 +1,71 @@
-[gd_scene load_steps=3 format=3 uid="uid://dkdgsxhch6q4h"]
+[gd_scene load_steps=7 format=4 uid="uid://dkdgsxhch6q4h"]
 
 [ext_resource type="Script" uid="uid://coro4pi7u2bd7" path="res://Common/main.gd" id="1_mf43n"]
-[ext_resource type="SpriteFrames" uid="uid://2rs5v8lg26ga" path="res://Assets/Enemies/enemy-sheet.tres" id="2_mf43n"]
+
+[sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_af62b"]
+_data = PackedByteArray("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")
+size_override = Vector2(128, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mf43n"]
+atlas = SubResource("PortableCompressedTexture2D_af62b")
+region = Rect2(0, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i206d"]
+atlas = SubResource("PortableCompressedTexture2D_af62b")
+region = Rect2(64, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0285w"]
+atlas = SubResource("PortableCompressedTexture2D_af62b")
+region = Rect2(0, 384, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h1ooc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mf43n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i206d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0285w")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.0
+}]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_mf43n")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
 position = Vector2(390, 217.5)
 scale = Vector2(3.875, 3.90625)
-sprite_frames = ExtResource("2_mf43n")
-animation = &"mole"
-frame = 2
-frame_progress = 0.924423
+sprite_frames = SubResource("SpriteFrames_h1ooc")
+frame = 1
+frame_progress = 0.370819
+metadata/_aseprite_wizard_interface_config_ = {
+"animation_section": false,
+"layer_section": false,
+"output_section": false,
+"pending_changes": {},
+"slice_section": true
+}
+metadata/_aseprite_wizard_config_ = {
+"embed_tex": true,
+"layers": [],
+"o_ex_p": "",
+"o_folder": "",
+"o_name": "",
+"only_visible": false,
+"scale": "1.0",
+"should_round_fps": true,
+"slice": "Seagull",
+"source": "res://Assets/Enemies/enemies.aseprite",
+"source_uid": 9078218364876269327
+}
+metadata/_aseprite_wizard_source_file_hash_ = "485697721b60e08010395fb6f5adeaf1"
 
 [node name="Button" type="Button" parent="."]
 modulate = Color(1, 1, 1, 0)
