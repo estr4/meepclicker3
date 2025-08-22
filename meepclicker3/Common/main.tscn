@@ -1,14 +1,18 @@
 [gd_scene load_steps=3 format=3 uid="uid://dkdgsxhch6q4h"]
 
-[ext_resource type="Script" uid="uid://coro4pi7u2bd7" path="res://Main/Scripts/main.gd" id="1_yh5la"]
-[ext_resource type="Texture2D" uid="uid://s754xfypdpob" path="res://icon.svg" id="2_2w1kt"]
+[ext_resource type="Script" uid="uid://coro4pi7u2bd7" path="res://Common/main.gd" id="1_mf43n"]
+[ext_resource type="SpriteFrames" uid="uid://2rs5v8lg26ga" path="res://Assets/Enemies/enemy-sheet.tres" id="2_mf43n"]
 
 [node name="Main" type="Node2D"]
-script = ExtResource("1_yh5la")
+script = ExtResource("1_mf43n")
 
-[node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(388, 216)
-texture = ExtResource("2_2w1kt")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(390, 217.5)
+scale = Vector2(3.875, 3.90625)
+sprite_frames = ExtResource("2_mf43n")
+animation = &"mole"
+frame = 2
+frame_progress = 0.924423
 
 [node name="Button" type="Button" parent="."]
 modulate = Color(1, 1, 1, 0)
